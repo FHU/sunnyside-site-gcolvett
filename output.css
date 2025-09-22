@@ -205,6 +205,9 @@
   .top-30 {
     top: calc(var(--spacing) * 30);
   }
+  .top-\[-30px\] {
+    top: -30px;
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -222,6 +225,9 @@
   }
   .my-\[2rem\] {
     margin-block: 2rem;
+  }
+  .mt-\[1rem\] {
+    margin-top: 1rem;
   }
   .mt-\[28rem\] {
     margin-top: 28rem;
@@ -344,12 +350,8 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .space-x-8 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
-    }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -393,9 +395,6 @@
   .fill-current {
     fill: currentcolor;
   }
-  .fill-ss-green-500 {
-    fill: var(--color-ss-green-500);
-  }
   .object-center {
     object-position: center;
   }
@@ -405,20 +404,17 @@
   .px-\[1\.5rem\] {
     padding-inline: 1.5rem;
   }
-  .px-\[6rem\] {
-    padding-inline: 6rem;
+  .px-\[7rem\] {
+    padding-inline: 7rem;
   }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
-  }
-  .py-\[1rem\] {
-    padding-block: 1rem;
   }
   .py-\[2rem\] {
     padding-block: 2rem;
@@ -428,6 +424,9 @@
   }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
+  }
+  .pt-\[1rem\] {
+    padding-top: 1rem;
   }
   .pt-\[2rem\] {
     padding-top: 2rem;
@@ -456,6 +455,9 @@
   .pr-\[10rem\] {
     padding-right: 10rem;
   }
+  .pb-\[2rem\] {
+    padding-bottom: 2rem;
+  }
   .pb-\[3rem\] {
     padding-bottom: 3rem;
   }
@@ -465,8 +467,8 @@
   .pb-\[7rem\] {
     padding-bottom: 7rem;
   }
-  .pb-\[10rem\] {
-    padding-bottom: 10rem;
+  .pb-\[8rem\] {
+    padding-bottom: 8rem;
   }
   .pb-\[16rem\] {
     padding-bottom: 16rem;
@@ -514,6 +516,9 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-\[1\.2rem\] {
+    font-size: 1.2rem;
   }
   .text-\[1\.3rem\] {
     font-size: 1.3rem;
@@ -721,7 +726,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 40px 40px;
+  border-width: 0 0 30px 30px;
   border-color: transparent transparent white transparent;
   transform: rotate(0deg);
 }
@@ -744,11 +749,6 @@
 @property --tw-skew-y {
   syntax: "*";
   inherits: false;
-}
-@property --tw-space-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 @property --tw-leading {
   syntax: "*";
@@ -780,7 +780,6 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-space-x-reverse: 0;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
